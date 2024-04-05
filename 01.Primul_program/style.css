@@ -27,6 +27,18 @@
     margin-bottom: 20px;
     cursor: not-allowed;
 }
+.button1:hover{
+    background-color: rgb(114, 166, 164);
+}
+.button2:hover{
+    background-color: rgb(114, 166, 164);
+}
+.button1:active{
+    background-color: rgb(19, 203, 62);
+}
+.button2:active{
+    background-color: rgb(19, 203, 62);
+}
 .box{
     background-color: lightgrey;
     width: 50px;
