@@ -1,5 +1,6 @@
-h1{
+.titlu{
     color:blue;
+    text-align: center;
 }
 .container{
     background-color: lightgrey;
@@ -10,27 +11,42 @@ h1{
 
 }
 .button1{
-    color:blue;
-    background-color: brown;
+    color:rgb(0, 0, 0);
+    background-color: rgb(177, 170, 170);
+    text-decoration:underline;
+    font-size: xx-large;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    cursor: crosshair;
 }
-
+.button2{
+    color:rgb(61, 33, 198);
+    background-color: rgb(177, 163, 163);
+    font-size: xx-large;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    cursor: not-allowed;
+}
 .box{
     background-color: lightgrey;
     width: 50px;
     height: 50px;
     border: 2px solid blue;
 }
-
 .container1{
     width: 50vw;
     height: 10vh;
-
 /*Flex poate aranja toate elementele indiferent de cum sunt ele cu o distanta de gap 10px*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px; 
+    gap: 10px; /*distanta dintre elemente*/
+    border-top: 3px solid black;
+    border-bottom: 30px ridge rgb(6, 255, 168);
+    border-left: 3px dotted rgb(255, 5, 5);
+    border-right: 3px dashed rgb(14, 234, 25); /*dotted, dash - bordura intrerupta */
+    padding: 30px 50px 30px 50px; /*sus, dreapta, jos, stanga*/
 }
 /*SELECTOR ELEMENT, CLASA, ID*/
 p{
@@ -41,8 +57,10 @@ p{
 }
 #text-specific{
     color:blueviolet;
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: bold;
     background-color: bisque;
-    background-size: 50px;
+    background-size: 30px;
     display: inline-block; /*fundal de dimensiunea textului*/
+
 }

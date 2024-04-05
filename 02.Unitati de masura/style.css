@@ -27,3 +27,23 @@
     height: 50px;
     width: 50vw;
   }
+  .box5 {
+    background-color: #CD5C08;
+    height: 50px;
+
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+  }
+  .box6 {
+    background-color: #F5E8B7;
+    width: 150px;
+  
+    min-height: 50px;
+  }
+  .box7 {
+    background-color: #C1D8C3;
+    width: 100px;
+  
+    max-height: 40px;
+  }
