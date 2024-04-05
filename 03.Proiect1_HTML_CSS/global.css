@@ -1,0 +1,13 @@
+/* define global variables */
+:root{
+    --black: #2d2e2e;
+    --dark-green: #3a4f39;
+    --grey: #ababab;
+    --light-grey: #f6f6f6;
+    --white: #ffffff;
+    --light-green: #eff6f3;
+}
+
+body{
+    color: var(--light-green);
+}
