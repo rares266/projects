@@ -14,8 +14,6 @@ h1{
     background-color: brown;
 }
 
-
-
 .box{
     background-color: lightgrey;
     width: 50px;
@@ -25,12 +23,26 @@ h1{
 
 .container1{
     width: 50vw;
-    height: 50vh;
+    height: 10vh;
 
+/*Flex poate aranja toate elementele indiferent de cum sunt ele cu o distanta de gap 10px*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    gap: 10px;
+    gap: 10px; 
+}
+/*SELECTOR ELEMENT, CLASA, ID*/
+p{
+    color:brown;
+}
+.text-rosu{
+    color: blue;
+}
+#text-specific{
+    color:blueviolet;
+    font-size: 50px;
+    background-color: bisque;
+    background-size: 50px;
+    display: inline-block; /*fundal de dimensiunea textului*/
 }

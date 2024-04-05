@@ -1,0 +1,29 @@
+.wrapper {
+    width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .box1 {
+    background-color: #CD5C08;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .box2 {
+    background-color: #F5E8B7;
+    height: 50px;
+    width: 3.125rem;
+  }
+  
+  .box3 {
+    background-color: #C1D8C3;
+    height: 50px;
+    width: 50%;
+  }
+  
+  .box4 {
+    background-color: #6A9C89;
+    height: 50px;
+    width: 50vw;
+  }
