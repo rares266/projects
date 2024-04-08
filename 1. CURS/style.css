@@ -1,0 +1,36 @@
+h1{
+    color:blue;
+}
+.container{
+    background-color: lightgrey;
+    width: 300px;
+    height: 80px;
+    padding: 20px;
+    border: 20px solid blue;
+
+}
+.button1{
+    color:blue;
+    background-color: brown;
+}
+
+
+
+.box{
+    background-color: lightgrey;
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+}
+
+.container1{
+    width: 50vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
