@@ -8,6 +8,10 @@
     --light-grey: #f6f6f6;
     --white: #ffffff;
     --light-green: #1f9663;
+
+    --cta-backgraund: url("https://link.tenxbase.com/cta-background");
+    --cta-hills: url("https://link.tenxbase.com/cta-hills");
+    --cta-house: url("https://link.tenxbase.com/cta-background");
 }
 
 body{
@@ -30,3 +34,73 @@ body{
     font-weight: 500;
     font-size: 18px;
 } 
+.img-test{
+    background-image: url("https://link.tenxbase.com/cta-background");
+    /* background-image: var(--cta-backgraund); */ 
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+.link{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:#3A4F39;
+}
+.btn{
+    padding: 17px 30px 17px 30px;
+    border-radius: 4px;
+    border: 1px solid var(--dark-green);
+}
+.btn-primary{
+    color: var(--white);
+    background-color: var(--dark-green);
+}
+.btn-primary:hover{
+    background-color: #283A27;
+    border-color: #283A27;
+}
+.btn-secondary{
+    color: var(--dark-green);
+    background-color: var(--white); 
+}
+.btn-secondary:hover{
+    color: #283A27;
+    border-color: #283A27;
+}
+.input{
+
+    padding: 17px 16px 17px 16px;
+    border-radius: 4px;
+    border: none;
+
+    flex: 1;
+
+    background-color: var(--light-grey);
+    border: 1px solid var(--light-grey);
+    width: 300px;
+}
+.input:focus{
+    outline: none;
+    border: 1px solid #A0CD9E;
+}
+.input:hover{
+    outline: none;
+    border: 1px solid #A0CD9E;
+}
+.input-group{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.input-group > .input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0;
+}
+.input-group > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
