@@ -106,15 +106,18 @@ console.log('enterButton:', cancelButton);
 cancelButton?.addEventListener('click', () => {
     console.log('You clicked me!');
 
-    const pinSection = document.getElementById('pin-section');
-    console.log('pinSection:', pinSection);
-    pinSection?.classList.remove('hidden');
+    const confirmare = confirm('Doresti sa inchizi aplicatia ATM ?');
+    if(confirmare){
+        const pinSection = document.getElementById('pin-section');
+        console.log('pinSection:', pinSection);
+        pinSection?.classList.remove('hidden');
 
-    const actionsSection = document.getElementById('actions-section');
-    console.log('actionsSection:', actionsSection);
-    actionsSection?.classList.add('hidden');
+        const actionsSection = document.getElementById('actions-section');
+        console.log('actionsSection:', actionsSection);
+        actionsSection?.classList.add('hidden');
 
-    const systemMessage = document.getElementById('system-message');
-    console.log('systemMessage:', systemMessage);
-    systemMessage?.classList.add('hidden');
+        const systemMessage = document.getElementById('system-message');
+        console.log('systemMessage:', systemMessage);
+        systemMessage?.classList.add('hidden');
+    }
 });
