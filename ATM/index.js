@@ -84,7 +84,7 @@ withdrowButton?.addEventListener('click', () => {
     if (isNaN(amount)) {
         alert('Invalit amount. Please provide a number');
     } else {
-        if(BALANCE > amount){
+        if(BALANCE >= amount){
             BALANCE -= amount;
 
             const systemMessage = document.getElementById('system-message');
