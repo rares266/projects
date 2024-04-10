@@ -91,7 +91,7 @@ withdrowButton?.addEventListener('click', () => {
             console.log('systemMessage:', systemMessage);
     
             if (systemMessage) {
-                systemMessage.textContent = `You have withdrow ${amount} RON. Your new balance is ${BALANCE} RON`;
+                systemMessage.textContent = `You withdrew ${amount} RON. Your new balance is ${BALANCE} RON`;
             }
         } else{
             alert('Nu ai suficienti bani ca sa poti efectua retrageri');
