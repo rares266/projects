@@ -1,0 +1,25 @@
+const withdrawButton = document.getElementById('withdraw-button');
+console.log('withdraw-button:', withdrawButton);
+withdrawButton?.addEventListener('click', () => {
+    console.log('withdrow button clicked');
+
+    const _amount = prompt('Enter the amount you want to remove from deposit');
+    const amount = parseFloat(_amount || '');
+    console.log('amount:', amount);
+
+    if (isNaN(amount)) {
+        alert('Invalit amount. Please provide a number');
+    if(BALANCE > amount){
+        alert('Nu ai bani suficienti pentru a scoate');
+    }else {
+        BALANCE -= amount;
+
+        const systemMessage = document.getElementById('system-message');
+        console.log('systemMessage:', systemMessage);
+
+        if (systemMessage) {
+            systemMessage.textContent = `You remove from deposited ${amount} RON. Your new balance is ${BALANCE} RON`;
+        }
+    }
+}
+})
