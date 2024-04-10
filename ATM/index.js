@@ -77,7 +77,7 @@ console.log('withdrowButton:', withdrowButton);
 withdrowButton?.addEventListener('click', () => {
     console.log('withdraw button clicked');
 
-    const _amount = prompt('Enter the amount you want to deposit');
+    const _amount = prompt('Enter the amount you want to withdrow');
     const amount = parseFloat(_amount || '');
     console.log('amount:', amount);
 
@@ -91,7 +91,7 @@ withdrowButton?.addEventListener('click', () => {
             console.log('systemMessage:', systemMessage);
     
             if (systemMessage) {
-                systemMessage.textContent = `You have remove from deposit ${amount} RON. Your new balance is ${BALANCE} RON`;
+                systemMessage.textContent = `You have withdrow ${amount} RON. Your new balance is ${BALANCE} RON`;
             }
         } else{
             alert('Nu ai suficienti bani ca sa poti efectua retrageri');
