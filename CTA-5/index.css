@@ -23,16 +23,29 @@
 .h1-text{
     color: black;
 }
-@media screen and (max-width: 630px) {
-    .h1-text{
+@media screen {
+    .mobile .h1-text{
         width: 395px;
         text-align: center;
     }
-    .btn-primary{
+    .mobile .btn-primary{
         width: 395px;
     }
-    .hero{
+    .mobile .hero{
         width: 427px;
+        height: 343px; 
+    }
+}
+@media (max-width: 630px) {
+    .h1-text{
+        width: 490px;
+        text-align: center;
+    }
+    .btn-primary{
+        width: 555px;
+    }
+    .hero{
+        width: 555px;
         height: 343px; 
     }
 }
