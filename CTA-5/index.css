@@ -23,7 +23,7 @@
 .h1-text{
     color: black;
 }
-@media (max-width: 630px) {
+@media screen and (max-width: 630px) {
     .h1-text{
         width: 395px;
         text-align: center;
