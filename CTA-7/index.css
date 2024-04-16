@@ -15,3 +15,20 @@
 .input-group{
     margin: 0px;
 }
+@media (max-width: 700px) {
+    
+    .h1-text{
+        width: 379px;
+        text-align: center;
+    }
+    .regular-text{
+        width: 379px;
+        text-align: center;
+    }
+    .btn .btn-primary{
+        width: 379px;
+    }
+    .input-group {
+        width: 379px;
+    }
+}
