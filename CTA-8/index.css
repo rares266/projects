@@ -8,7 +8,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .panel{
     display: flex;
@@ -16,15 +15,50 @@ body{
     justify-content: center;
     align-items: center;
 }
+.container{
+    width: 410px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 150px;
+}
+.hero{
+    background-size: cover;
+    width: 294px;
+    height: 178px;
+    border-radius: 8px;
+}
 .hero1{
     background-image: var(--cta-backgraund);
-    background-size: cover;
-    width: 100px;
-    height: 100px;
 }
 .hero2{
     background-image: var(--cta-house);
-    background-size: cover;
-    width: 100px;
-    height: 120px;
 }
+.btn-primary{
+    width: 219px;
+}
+@media (max-width:1420px) {
+    .panel{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container{
+        margin: 0px;
+        gap: 15px;
+        width: 330px;
+    }
+    .hero{
+        width: 363px;
+    }
+    .regular-text > .container{
+        width: 100px;
+    }
+    .btn-primary{
+        width: 363px;
+    }
+}
+
