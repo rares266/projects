@@ -7,3 +7,4 @@ function isMobileDevice() {
 if (isMobileDevice()) {
     document.documentElement.classList.add('mobile');
 }
+
