@@ -1,0 +1,87 @@
+.main {
+}
+.header-logo {
+  position: relative;
+  margin-right: 5px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  border: 0px;
+  gap: 330px;
+}
+.header-text {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: LabGrotesque, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.square {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  margin-left: 65px;
+  margin-top: 5px;
+}
+.red {
+  background-color: rgb(0, 221, 179);
+  top: 0;
+  left: 0;
+}
+.blue {
+  background-color: rgb(243, 71, 71);
+  top: 8px;
+  left: 8px;
+  mix-blend-mode: multiply; /*CULOAREA DIN INTERSECTIA CELOR 2 PATRATE*/
+}
+
+
+
+/*BARA DE NAVIGARE*/
+nav {
+  background-color: #ffffff; /* Setează culoarea fundalului pentru elementul <nav> la alb */
+  margin-left: 15px; /* Stabilește o margine la stânga a elementului <nav> de 15 pixeli */
+  margin-right: 15px;
+  font-size: 18px; /* Stabilește dimensiunea fontului pentru textul din <nav> la 18 pixeli */
+}
+ul {
+  list-style-type: none; /* Elimină stilurile implicite ale listei pentru elementul <ul> */
+  margin: 1px; /* Elimină marginile implicite ale elementului <ul> */
+  padding: 0; /* Elimină padding-ul implicit al elementului <ul> */
+}
+li {
+  display: inline; /* Face elementele <li> să fie afișate în linie unul cu celălalt */
+}
+li a {
+  display: inline-block; /* Face ca legăturile din interiorul elementelor <li> să fie afișate ca blocuri inline */
+  padding: 10px 20px; /* Adaugă padding de 10 pixeli sus/jos și 20 pixeli stânga/dreapta la legăturile din interiorul elementelor <li> */
+  color: #767676; /* Stabilește culoarea textului pentru legăturile din interiorul elementelor <li> la gri închis */
+  text-decoration: none; /* Elimină orice subliniere de deasupra textului pentru legăturile din interiorul elementelor <li> */
+  transition: 0.3s ease-in-out;
+}
+li a:hover {
+  /* Este folosită pentru a defini stilurile pe care le va avea un element <a> când cursorul mouse-ului se află deasupra lui. */
+    color: black;
+    font-size: 19px;
+    .btn{
+      margin-left: 2px;
+    }
+}
+
+
+/*BUTON*/
+.btn {
+  background-color: grey;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 129px;
+  height: 48px;
+
+  margin-left: 5px;
+}
+

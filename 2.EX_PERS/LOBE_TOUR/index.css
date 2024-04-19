@@ -1,0 +1,101 @@
+:root {
+  --header-color: rgba(255, 253, 252, 0.9);
+  --hero-video: url('https://www.lobe.ai/assets/hero/Home.mp4');
+}
+body {
+  margin: 0px;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-logo {
+  position: relative;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  width: 100vw;
+  height: 8vh;
+  background-color: var(--header-color);
+  box-shadow: black 0px 10px 50px -10px;
+  position: fixed; /*Pozitionare fixa header cand dai scroll down in pagina*/
+}
+.header-text {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: LabGrotesque, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.square {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  margin-left: 65px;
+  margin-top: 5px;
+}
+.red {
+  background-color: rgb(0, 221, 179);
+  top: 0;
+  left: 0;
+}
+.blue {
+  background-color: rgb(243, 71, 71);
+  top: 8px;
+  left: 8px;
+  mix-blend-mode: multiply; /*Culoarea rezultata din intersectia celor 2 patrate*/
+}
+/*BARA DE NAVIGARE*/
+nav {
+  background-color: var(--header-color);
+  font-size: 18px;
+}
+ul {
+  list-style-type: none; /* Elimină stilurile implicite ale listei pentru elementul <ul> */
+  margin: 0; 
+  padding: 0; 
+}
+li {
+  display: inline; /* Face elementele <li> să fie afișate în linie unul cu celălalt */
+}
+li a {
+  display: inline-block; /* Face ca legăturile din interiorul elementelor <li> să fie afișate ca blocuri inline */
+  padding: 10px 20px; 
+  color: #767676; 
+  text-decoration: none; /* Elimină orice subliniere de deasupra textului pentru legăturile din interiorul elementelor <li> */
+  transition: transform 0.3s ease; /* Adăugăm o tranziție pentru efectul de transform (marire) la hover */
+}
+li a:hover {
+  color: black;
+  transform: scale(1.2); /* Mărim doar elementul la care se face hover */
+}
+/*BUTON*/
+.btn {
+  font-size: 18px;
+  width: 129px;
+  height: 48px;
+  transition: transform 0.3s ease; /* Adăugăm o tranziție pentru efectul de transform (marire) la hover */
+  border-radius: 24px;
+  border: none;
+}
+.btn-primary {
+  background-color: #04ddb2;
+  color: white;
+}
+.btn-primary:hover {
+  transform: scale(1.2); /* Mărim doar elementul la care se face hover */
+}
+/* */
+.hero-right{
+  background-image: var(--hero-video);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
