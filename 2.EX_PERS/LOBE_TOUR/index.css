@@ -1,13 +1,14 @@
 :root {
   --header-color: rgba(255, 253, 252, 0.9);
   --hero-video: url('https://www.lobe.ai/assets/hero/Home.mp4');
+  --scale: 1.1;
 }
 body {
   margin: 0px;
 }
 .main {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 300px;
-  width: 100vw;
+  width: 100%;
   height: 8vh;
   background-color: var(--header-color);
   box-shadow: black 0px 10px 50px -10px;
@@ -73,7 +74,7 @@ li a {
 }
 li a:hover {
   color: black;
-  transform: scale(1.2); /* Mărim doar elementul la care se face hover */
+  transform: scale(var(--scale)); /* Mărim doar elementul la care se face hover */
 }
 /*BUTON*/
 .btn {
@@ -89,13 +90,35 @@ li a:hover {
   color: white;
 }
 .btn-primary:hover {
-  transform: scale(1.2); /* Mărim doar elementul la care se face hover */
+  transform: scale(var(--scale)); /* Mărim doar elementul la care se face hover */
 }
-/* */
+/*PRIMA PARTE A PAGINII*/
 .hero-right{
   background-image: var(--hero-video);
   background-size: cover;
   width: 50px;
   height: 50px;
   position: absolute;
+}
+.hero-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.hero{
+  display: flex;
+  flex-direction: row;
+  gap: 190px;
+}
+.hero-left{
+  margin-left: 100px;
+}
+.video {
+  margin-left: 150px;
+  
+}
+.h1-text{
+  font-size: 90px;
 }
