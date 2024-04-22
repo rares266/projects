@@ -1,4 +1,5 @@
 // @ts-nocheck
+
 // LOGIN§§
 document.querySelector('.btn-login').addEventListener('click', function () {
   const pinInput = document.querySelector('.input')
