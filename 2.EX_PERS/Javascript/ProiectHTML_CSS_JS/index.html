@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect_HTML_CSS_JS</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="rezultatElev">
+                <div class="regular-text">Ex. 1 Introdu nota elevului pentru a afla daca acesta este promovat sau
+                    respins.
+                </div>
+                <input class="nota" type="number" placeholder="Nota elev" onkeyup="numbersOnly(this)">
+                <button class="btn">Afla rezultat</button>
+            </div>
+            <div class="participareConcurs">
+                <div class="regular-text">Ex. 2 Introdu numele si varsta elevului pentru inscriere la concurs
+                </div>
+                <input class="nume" id="nume" type="text" placeholder="Nume elev" onkeyup="lettersOnly(this)">
+                <input class="varsta" id="varsta" type="number" placeholder="Varsta elev" onkeyup="numbersOnly(this)">
+                <button class="btnConcurs">Participa la concurs</button>
+            </div>
+            <div class="diferentaInAniCopii">
+                <div class="regular-text">Ex. 3 Afla ce copil este mai mare si cu cati ani diferenta</div>
+                <div class="copilUnu">
+                    <input class="varstaCopil1" type="number" placeholder="Varsta copil 1" onkeyup="numbersOnly(this)">
+                </div>
+                <div class="copilDoi">
+                    <input class="varstaCopil2" type="number" placeholder="Varsta copil 2" onkeyup="numbersOnly(this)">
+                </div>
+                <button class="btnDiferenta">Afla diferenta</button>
+            </div>
+        </div>
+    </div>
+    <script src="./function/global.js"></script>
+</body>
+
+</html>
